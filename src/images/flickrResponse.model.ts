@@ -7,7 +7,8 @@ interface Feed {
 }
 
 interface Entry{
-    link: Link[]
+    link: Link[],
+    content: Content
 }
 
 interface Link {
@@ -17,4 +18,8 @@ interface Link {
 interface Attribute {
     type: string,
     href: string
+}
+
+interface Content {
+    _text: string;
 }
